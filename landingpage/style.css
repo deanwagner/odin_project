@@ -231,16 +231,16 @@ nav a:focus {
     display: flex;
     gap: 2rem;
     justify-content: center;
-    padding: 5rem 10rem;
+    padding: 5rem 8rem;
     width: 70vw;
 }
 
 #action article div:first-child {
-    width: 70%;
+    flex: 3 3 auto;
 }
 
 #action article div:last-child {
-    width: 30%;
+    flex: 1 1 auto;
 }
 
 #action h4 {
@@ -259,8 +259,10 @@ nav a:focus {
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
     color: var(--light-accent-color);
     font-size: 1.2rem;
+    white-space: nowrap;
     padding: 0.5rem 2rem;
     text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+    width: 100%;
 }
 
 #action button:hover,
