@@ -24,6 +24,10 @@
     cursor: default;
 }
 
+/* * * * * * * * *\
+ * Element Base  *
+\* * * * * * * * */
+
 html, body {
     background-color: var(--base-bg-color);
     color: var(--base-text-color);
@@ -33,6 +37,13 @@ html, body {
     padding: 0;
     scroll-behavior: smooth;
     text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+}
+
+section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 a, button {
@@ -45,6 +56,10 @@ p {
     margin: 0 auto 1em;
     text-align: justify;
 }
+
+/* * * * * * * * *\
+ *  Page Header  *
+\* * * * * * * * */
 
 header {
     align-items: center;
@@ -94,12 +109,9 @@ nav a:focus {
     text-shadow: 0 0 0.5rem var(--dark-accent-color);
 }
 
-section {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    min-height: 100vh;
-}
+/* * * * * * * * *\
+ * Hero Section  *
+\* * * * * * * * */
 
 #hero {
     color: var(--dark-text-color);
@@ -138,6 +150,10 @@ section {
     width: 100%;
 }
 
+/* * * * * * * * *\
+ * Info Section  *
+\* * * * * * * * */
+
 #info {
     flex-direction: column;
 }
@@ -174,6 +190,10 @@ section {
     font-weight: bold;
 }
 
+/* * * * * * * * *\
+ * Quote Section *
+\* * * * * * * * */
+
 #quote {
     background-color: var(--light-bg-color);
     box-shadow: 0 0 2rem rgba(0,0,0,0.8);
@@ -197,29 +217,33 @@ section {
     text-align: right;
 }
 
+/* * * * * * * * * *\
+ * Action Section  *
+\* * * * * * * * * */
+
 #action article {
     align-items: center;
     background: radial-gradient(rgba(0,0,0,0),rgba(0,0,0,0.2));
     background-color: var(--base-accent-color);
     border-radius: 1rem;
     box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.8);
-    color: var(--light-bg-color);
+    color: var(--light-accent-color);
     display: flex;
+    gap: 2rem;
     justify-content: center;
     padding: 5rem 10rem;
     width: 70vw;
 }
 
 #action article div:first-child {
-    width: 80%;
+    width: 70%;
 }
 
 #action article div:last-child {
-    width: 20%;
+    width: 30%;
 }
 
 #action h4 {
-    color: var(--light-accent-color);
     font-size: 1.5rem;
     margin: 0;
 }
@@ -234,8 +258,9 @@ section {
     border-radius: 0.5rem;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.5);
     color: var(--light-accent-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0.5rem 2rem;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
 }
 
 #action button:hover,
@@ -246,7 +271,12 @@ section {
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem var(--light-accent-color);
     color: var(--base-accent-color);
+    text-shadow: 0 0 0.5rem var(--base-accent-color);
 }
+
+/* * * * * * * * *\
+ *  Page Footer  *
+\* * * * * * * * */
 
 footer {
     color: var(--dark-text-color);
@@ -260,8 +290,8 @@ footer {
 
 footer a:link, 
 footer a:visited {
-    color: var(--base-accent-color);
-    text-decoration: none;
+    color: var(--dark-accent-color);
+    text-decoration: underline;
 }
 
 footer a:hover, 
@@ -269,7 +299,7 @@ footer a:active,
 footer a:focus {
     color: var(--dark-accent-color);
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     text-shadow: 0 0 0.5rem var(--dark-accent-color);
 }
 
@@ -285,7 +315,7 @@ footer a:focus {
     #quote { min-height: 50vh; }
     #quote blockquote { padding: 0 5vw; }
     #action { min-height: 30vh; width: 100%; }
-    #action article { flex-direction: column; padding: 2rem 5rem; }
+    #action article { flex-direction: column; gap: 0; padding: 2rem 5rem; }
     #action article div:first-child { margin-bottom: 1rem; width: 100%; }
     #action article div:last-child { text-align: center; width: 100%; }
 }
