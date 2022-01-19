@@ -3,7 +3,7 @@
  * @author  Dean Wagner <info@deanwagner.net>
  * @param   {string} cipher - Text to encrypt/decrypt
  * @param   {number} key    - The Encryption Key
- * @returns {number} - The encrypted/decrypted text
+ * @returns {string} - The encrypted/decrypted text
  */
 const caesar = function(cipher, key) {
     const uppercase = ["A","B","C","D","E","F","G","H","I","G","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
@@ -32,30 +32,20 @@ const caesar = function(cipher, key) {
 };
 
 /**
- * Helper Function for caesr(); Calculates shift for character index
+ * Helper Function for caesar(); Calculates shift for character index
  * @author  Dean Wagner <info@deanwagner.net>
- * @param   {number} index - Index of matched Character
+ * @param   {number} index - Index of Original Character
  * @param   {number} key   - Encryption Key
- * @returns {number} - encrypted/decrypted text
+ * @returns {number} - Shifted Index
  */
 const shiftFactor = function(index, key) {
-    let shift;
     let factor;
+    let shift;
     let result;
 
     // Calculate Factor
-    if (key > 26) {
-        let k = key;
-        while (k > 26) { 
-            k = k - 26; 
-        }
-        factor = k;
-    } else if (key < -26) {
-        let k = key;
-        while (k < -26) { 
-            k = k + 26; 
-        }
-        factor = k;
+    if ((key > 26) || (key < -26)) {
+        factor = key % 26;
     } else {
         factor = key;
     }
