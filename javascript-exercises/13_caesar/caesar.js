@@ -32,7 +32,7 @@ const caesar = function(cipher, key) {
 };
 
 /**
- * Helper Function for caesar(); Calculates shift for character index
+ * Helper Function for caesar(); Calculates shift factor for character index
  * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} index - Index of Original Character
  * @param   {number} key   - Encryption Key
