@@ -1,5 +1,5 @@
 /**
- * Encrypts (+key) or Decrypts (-key) text string per "Caeser Cipher" technique
+ * Encrypts (+key) or Decrypts (-key) text string per "Caesar Cipher" technique
  * @author  Dean Wagner <info@deanwagner.net>
  * @param   {string} cipher - Text to encrypt/decrypt
  * @param   {number} key    - The Encryption Key
