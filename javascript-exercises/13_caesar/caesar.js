@@ -43,10 +43,12 @@ const shiftFactor = function(index, key) {
     let shift;
     let result;
 
-    // Calculate Factor
+    // Calculate Shift Factor
     if ((key > 26) || (key < -26)) {
+        // Large Shift Factor
         factor = key % 26;
     } else {
+        // Regular Shift Factor
         factor = key;
     }
 
@@ -54,10 +56,13 @@ const shiftFactor = function(index, key) {
     shift = index + factor;
 
     if (shift > 25) {
+        // Wrap Positive Numbers
         result = shift - 26;
     } else if (shift < 0) {
+        // Wrap Negative Numbers
         result = shift + 26;
     } else {
+        // No Wrap
         result = shift;
     }
 
