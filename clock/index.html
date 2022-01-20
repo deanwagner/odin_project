@@ -7,9 +7,10 @@
     <title>JS + CSS Clock</title>
     <style>
         html {
-            background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+            background: #00293b url(https://unsplash.it/1500/1000?image=1019);
             background-size: cover;
-            font-family: 'helvetica neue';
+            background-position: center center; 
+            font-family:'Courier New', Courier, monospace;
             text-align: center;
             font-size: 10px;
         }
@@ -27,9 +28,9 @@
         .clock {
             width: 30rem;
             height: 30rem;
-            border: 20px solid white;
+            border: 0.2rem solid white;
             border-radius: 50%;
-            margin: -5rem auto 0;
+            margin: -3rem auto 0;
             position: relative;
             padding: 2rem;
             box-shadow:
@@ -78,7 +79,10 @@
 
         .digital {
             color: white;
-            font-size: 5em;
+            font-size: 4em;
+            letter-spacing: 4rem;
+            padding-left: 4rem;
+            text-align: center;
             text-shadow: 
                 0 0 0.5rem white,
                 0 0 1rem black;
@@ -101,21 +105,19 @@
         const hourHand   = document.querySelector('.hour-hand');
         const minsDigit  = document.querySelector('.min-digit');
         const hourDigit  = document.querySelector('.hour-digit');
-        const pageTitle  = document.getElementsByTagName('title')[0];
 
         function setDate() {
             const now = new Date();
 
             const seconds = now.getSeconds();
+            const secondsDegrees = ((seconds / 60) * 360);
+            secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
             if (seconds === 0) {
                 secondHand.classList.add('no-trans');
             } else if (seconds === 1) {
                 secondHand.classList.remove('no-trans');
             }
-
-            const secondsDegrees = ((seconds / 60) * 360);
-            secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
 
             const mins = now.getMinutes();
             const minsDegrees = ((mins / 60) * 360) + ((seconds / 60) * 6);
@@ -127,7 +129,7 @@
             hourHand.style.transform = `rotate(${hourDegrees}deg)`;
             hourDigit.innerText = ('00' + hour).slice(-2);
 
-            pageTitle.innerText = hourDigit.innerText + ':' + minsDigit.innerText;
+            document.title = hourDigit.innerText + ':' + minsDigit.innerText;
         }
 
         setInterval(setDate, 1000);

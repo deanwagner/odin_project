@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock | Paper | Scissors</title>
+    </head>
+    <body>
+        <h1>Rock | Paper | Scissors</h1>
+        <p>First to 5 wins!</p>
+        <a href="./index.html">Reload</a>
+        <script>
+
+"use strict";
+
+class RockPaperScissors {
+
+    constructor() {
+        this.hand = [];
+        this.hand[0] = 'Rock';
+        this.hand[1] = 'Paper';
+        this.hand[2] = 'Scissors';
+
+        this.hands = this.hand.length - 1;
+        this.goal  = 5;
+
+        this.userHand;
+        this.compHand;
+
+        this.userScore = 0;
+        this.compScore = 0;
+
+        this.buildUI();
+        this.playGame();
+    }
+
+    buildUI() {
+        const headTitle = document.getElementsByTagName("title")[0];
+        const bodyTitle = document.getElementsByTagName("h1")[0];
+        const finalGoal = document.getElementsByTagName("p")[0];
+
+        let pageTitle = this.hand.join(" | ");
+
+        headTitle.innerHTML = pageTitle;
+        bodyTitle.innerHTML = pageTitle;
+        finalGoal.innerHTML = `First to ${this.goal} wins!`;
+    }
+
+    playGame() {
+        this.userHand = this.getUserHand();
+        if (this.userHand !== null) {
+            this.compHand = this.getCompHand();
+            this.calculateWinner();
+        } else {
+            this.error("Invalid Input.");
+        }
+    }
+
+    getUserHand() {
+        let message = "Please enter one of the following values: ";
+
+        message += this.hand.join(", ") + ".";
+
+        let userInput = prompt(message);
+        let inputHand = null;
+
+        this.hand.forEach((item, index) => {
+            if (item.toLowerCase() === userInput.toLowerCase()) {
+                inputHand = index;
+            }
+        });
+        
+        return inputHand;
+    }
+
+    getCompHand() {
+        return Math.floor(Math.random() * (this.hands + 1));
+    }
+
+    calculateWinner() {
+        switch(true) {
+            case (this.userHand === this.compHand):
+                this.tie();
+                break;
+            
+            case ((this.userHand === 0) && (this.compHand === this.hands)):
+                this.userWin();
+                break;
+
+            case ((this.userHand === this.hands) && (this.compHand === 0)):
+                this.userLose();
+                break;
+
+            case (this.userHand > this.compHand):
+                this.userWin();
+                break;
+
+            case (this.userHand < this.compHand):
+                this.userLose();
+                break;
+
+            default:
+                this.error("Unable to determine winner.");
+        }
+    }
+
+    tie() {
+        this.result(`Tie. You both played ${this.hand[this.userHand]}.`);
+    }
+
+    userWin() {
+        this.userScore++;
+        this.result(`You Win! ${this.hand[this.userHand]} beats ${this.hand[this.compHand]}!`);
+    }
+
+    userLose() {
+        this.compScore++;
+        this.result(`You Lose. ${this.hand[this.compHand]} beats ${this.hand[this.userHand]}.`);
+    }
+
+    error(message) {
+        this.result(message);
+    }
+
+    result(message) {
+        if ((this.userScore < this.goal) && (this.compScore < this.goal)) {
+            message += `\nYou: ${this.userScore} / Them: ${this.compScore}\nNext Round?`;
+
+            if (confirm(message)) {
+                this.playGame();
+            }
+        } else {
+            let message;
+
+            if (this.userScore >= this.goal) {
+                message = "* Y O U * W 0 N ! *";
+            } else {
+                message = "* Y O U * L O S T ! *";
+            }
+
+            message += `\nFinal Score:\nYou: ${this.userScore}\nThem: ${this.compScore}\nPlay again?`;
+
+            if (confirm(message)) {
+                location.reload();
+            }
+        }
+    }
+}
+
+new RockPaperScissors;
+
+        </script>
+    </body>
+</html>
