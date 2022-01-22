@@ -1,3 +1,15 @@
+
+/* * * * * * * * * * * *\
+ * Rock Paper Scissors *
+ *                     *
+ *  By: Dean Wagner    *
+ *  me@deanwagner.net  *
+ *                     *
+ *   Assignment for:   *
+ *  The Odin Project   *
+ * theodinproject.com  *
+\* * * * * * * * * * * */
+
 :root {
     --base-font: Verdana, Geneva, Tahoma, sans-serif;
     --title-font: 'Comic Sans MS', 'Comic Sans', sans-serif;
@@ -7,6 +19,10 @@
     box-sizing: border-box;
     cursor: default;
 }
+
+/* * * * * * * * *\
+ * Element Base  *
+\* * * * * * * * */
 
 html, body {
     margin: 0;
@@ -85,6 +101,10 @@ h1 {
         0.5rem 0.5rem 0.5rem rgba(0,0,0,0.7);
 }
 
+/* * * * * * * * *\
+ *    Options    *
+\* * * * * * * * */
+
 #options, #selections, #scoreBoard {
     align-items: flex-end;
     display: flex;
@@ -114,6 +134,10 @@ h1 {
     filter: drop-shadow(1em 1em 0.6em rgba(0,0,0,0.5));
     transform: scale(1.2);
 }
+
+/* * * * * * * * *\
+ *  Selections   *
+\* * * * * * * * */
 
 #selections {
     display: none;
@@ -161,6 +185,10 @@ h1 {
 #selections #roundInfo {
     text-align: center;
 }
+
+/* * * * * * * * *\
+ *  Score Board  *
+\* * * * * * * * */
 
 #scoreBoard {
     align-items: center;
