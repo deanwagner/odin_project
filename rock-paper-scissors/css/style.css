@@ -1,0 +1,206 @@
+:root {
+    --base-font: Verdana, Geneva, Tahoma, sans-serif;
+    --title-font: 'Comic Sans MS', 'Comic Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    cursor: default;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background: rgb(128,128,128);
+    background: radial-gradient(rgba(128,128,128,1), rgba(64,64,64,1)); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #f4f4f4;
+    font-family: var(--base-font);
+    font-size: 2.5vmin;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0,0,0,0.8);
+}
+
+a {
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+a:link, a:visited {
+    color:#fff;
+    text-decoration: none;
+    text-shadow: 0.1em 0.1em 0.2em #000;
+}
+
+a:hover, a:focus, a:active {
+    color: #fff;
+    text-decoration: underline;
+    text-shadow: 0 0 0.3em #fff;
+}
+
+button {
+    background-color: #f4f4f4;
+    border: 1px solid rgba(64,64,64,1);
+    border-radius: 0.5em;
+    box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.8);
+    color: rgba(64,64,64,1);
+    cursor: pointer;
+    display: block;
+    margin-top: 1em;
+    padding: 0.5em 0;
+    transition: all 0.3s ease-out;
+    width: 100%;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #fff;
+    box-shadow: 0 0 1em #fff;
+    text-shadow: 0 0 0.1em rgba(64,64,64,1);
+}
+
+button:active {
+    transform: scale(1.2);
+}
+
+h1 {
+    color: #fff;
+    font-family: var(--title-font);
+    font-size: 4em;
+    font-weight: normal;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow:
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000,
+        0.5rem 0.5rem 0.5rem rgba(0,0,0,0.7);
+}
+
+#options, #selections, #scoreBoard {
+    align-items: flex-end;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 0 auto 1em;
+}
+
+#options a {
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    display: block;
+    text-align: center;
+    width: 8em;
+}
+
+#options a img {
+    cursor: pointer;
+    display: block;
+    filter: drop-shadow(0.5em 0.5em 0.5em rgba(0,0,0,0.7));
+    height: auto;
+    transition: all 0.3s ease-out;
+    width: 100%;
+}
+
+#options a img:hover {
+    filter: drop-shadow(1em 1em 0.6em rgba(0,0,0,0.5));
+    transform: scale(1.2);
+}
+
+#selections {
+    display: none;
+}
+
+#selections > * {
+    height: 8em;
+    width: 8em;
+}
+
+#selections figure {
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#selections figure img {
+    filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.8));
+    height: auto;
+    margin: 0 auto;
+    width: 7em;
+}
+
+#selections figure figcaption {
+    color: rgb(199, 199, 199);
+    font-size: 0.7em;
+    text-align: center;
+    padding: 0.2em 0;
+    text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,1);
+}
+
+#selections #userStatus {
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+#selections #roundInfo {
+    text-align: center;
+}
+
+#scoreBoard {
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+#scoreBoard > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#scoreBoard #userScore,
+#scoreBoard #compScore {
+    color: #fff;
+    font-family: var(--title-font);
+    font-size: 6em;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgba(0,0,0,1);
+}
+
+#scoreBoard #userBlock div:last-child,
+#scoreBoard #compBlock div:last-child {
+    font-size: 0.7em;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,1);
+}
+
+#scoreBoard #gameIntro {
+    font-family: var(--title-font);
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#scoreBoard #gameInfo {
+    font-size: 0.8em;
+}
+
+#scoreBoard #gameOver {
+    display: none;
+}

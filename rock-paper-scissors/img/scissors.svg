@@ -1,0 +1,30 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 246.05 221.06">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="imagebot_10" data-name="imagebot 10">
+    <path id="imagebot_18" data-name="imagebot 18" class="cls-1" d="M19.48,99.6C7.05,98,6.31,88,8.55,77.05,11.71,61.56,36.19,36.53,49.24,31.7c12-4.4,22.6-2.18,26.07,7.25" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_17" data-name="imagebot 17" class="cls-1" d="M155.51,55.39C134.93,37,85.1,30.34,58,47.93,44.2,57.12,20.76,84,20.18,99.57c-1.1,26.67,8.15,48,24.8,67.56a115.57,115.57,0,0,0,20.47,18.48c25.48,17.44,54.43,10.18,66.29,6.69,15.89,12.27,33.53,29,49.28,45.66,23.57,25,46.51-17.48,24.19-40.66-10.45-10.85-17.91-21.15-41.81-44.83,17.53,6.93,43.53,15.83,59.45,24.56,26.26,14.4,38.83-29.7,6.36-46.63-22.12-11.52-41-16.82-62.09-27.71,0-6.27,9.74-28.25-11.61-47.3Z" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_16" data-name="imagebot 16" d="M166.39,149.82c-20.66-9.69-33.48-9.93-39.41-10.94,13.17,5.76,16.66,6.87,30.2,14a31.34,31.34,0,0,1,7.43,5.67Z" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_15" data-name="imagebot 15" d="M133.82,189.41c-10.6-8.18-25.34-15.49-36.3-17.83,11.67,8.63,20.89,15.43,32.19,23.39,0,0,1.94-2.85,4.11-5.56Z" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_14" data-name="imagebot 14" class="cls-2" d="M40.65,94.45c8.87,16.14,12.77,19.12,18.15,26.15" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_13" data-name="imagebot 13" class="cls-2" d="M50,80.83c13.9,14.9,22,20.76,32.09,29.78" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_12" data-name="imagebot 12" class="cls-2" d="M61.54,64.91C72.39,73.79,78.36,77,85.7,81.85" transform="translate(-5.06 -27.03)"/>
+    <path id="imagebot_11" data-name="imagebot 11" d="M170.94,100.62c-27.24-13-30.71-27.22-38.66-41.15,6.43,16.67,2.89,29.54,33.37,46.47l5.29-5.32Z" transform="translate(-5.06 -27.03)"/>
+  </g>
+</svg>
