@@ -17,12 +17,10 @@ class RockPaperScissors {
             img  : './img/scissors.svg'
         }];
 
-        this.hands = this.hand.length - 1;
-        this.goal  = 5;
-
-        this.userHand;
-        this.compHand;
-
+        this.hands     = this.hand.length - 1;
+        this.goal      = 5;
+        this.userHand  = null;
+        this.compHand  = null;
         this.userScore = 0;
         this.compScore = 0;
 
@@ -120,13 +118,13 @@ class RockPaperScissors {
     }
 
     result() {
-        this.options.style.display = 'none';
-        this.selections.style.display = 'flex';
-
         this.imgUser.src = this.hand[this.userHand].img;
         this.imgUser.alt = this.hand[this.userHand].name;
         this.imgComp.src = this.hand[this.compHand].img;
         this.imgComp.alt = this.hand[this.compHand].name;
+
+        this.options.style.display = 'none';
+        this.selections.style.display = 'flex';
 
         if ((this.userScore === this.goal) || (this.compScore === this.goal)) {
             this.gameOver();
@@ -147,14 +145,13 @@ class RockPaperScissors {
         }
         this.gameIntro.innerText = message;
         this.gameInfo.innerText = 'G A M E - O V E R';
-        this.btnGameOver.style.display = 'block';
         this.btnNextRound.style.display = 'none';
+        this.btnGameOver.style.display = 'block';
     }
 
     resetUI() {
-        this.userHand = null;
-        this.compHand = null;
-
+        this.userHand  = null;
+        this.compHand  = null;
         this.userScore = 0;
         this.compScore = 0;
 
