@@ -83,7 +83,7 @@ class RockPaperScissors {
             this.calculateWinner();
         } else {
             // Invalid Input
-            this.error("Invalid Input");
+            this.error('Invalid Input');
         }
     }
 
@@ -121,7 +121,7 @@ class RockPaperScissors {
                 break;
 
             default:
-                this.error("Unable to Determine Winner");
+                this.error('Unable to Determine Winner');
         }
     }
 
