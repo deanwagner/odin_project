@@ -148,7 +148,7 @@ h1 {
 }
 
 #selections > div {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     border: 1px solid #000;
     border-radius: 0.5em;
     box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.7);
@@ -225,7 +225,7 @@ h1 {
 
 #scoreBoard > div {
     align-items: stretch;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0,0,0,0.1);
     border: 1px solid #000;
     border-radius: 0.5em;
     box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.7);
@@ -288,4 +288,29 @@ h1 {
 
 #scoreBoard #gameOver {
     display: none;
+}
+
+/* * * * * * * * *\
+ *  Page Footer  *
+\* * * * * * * * */
+
+footer {
+    bottom: 0;
+    display: block;
+    font-size: 0.6em;
+    margin: 2rem 0 1rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+footer a:link,
+footer a:visited {
+    text-decoration: underline;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    text-decoration: none;
 }
