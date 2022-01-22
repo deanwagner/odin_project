@@ -67,22 +67,22 @@ button {
     box-shadow: 0.3em 0.3em 0.5em rgba(0,0,0,0.8);
     color: rgba(64,64,64,1);
     cursor: pointer;
+    font-size: 1em;
     display: block;
     margin-top: 1em;
-    padding: 0.5em 0;
+    max-width: 20em;
+    padding: 0.3em 0;
     transition: all 0.3s ease-out;
     width: 100%;
 }
 
 button:hover,
 button:focus,
+button:active,
 button:active {
     background-color: #fff;
     box-shadow: 0 0 1em #fff;
     text-shadow: 0 0 0.1em rgba(64,64,64,1);
-}
-
-button:active {
     transform: scale(1.2);
 }
 
@@ -140,38 +140,64 @@ h1 {
 \* * * * * * * * */
 
 #selections {
-    display: none;
-}
-
-#selections > * {
-    height: 8em;
-    width: 8em;
-}
-
-#selections figure {
     align-items: center;
+    display: none;
+    gap: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+#selections > div {
     background-color: rgba(0,0,0,0.2);
     border: 1px solid #000;
     border-radius: 0.5em;
     box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.7);
+    height: 8em;
+    width: 7em;
+}
+
+#selections #userSelection,
+#selections #compSelection {
+    align-items: center;
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-#selections figure img {
+#selections #userSelection {
+    margin-left: 1.8em;
+}
+
+#selections #compSelection {
+    margin-right: 1.8em;
+}
+
+#selections img {
     filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.8));
     height: auto;
     margin: 0 auto;
     width: 7em;
 }
 
-#selections figure figcaption {
+#selections #userSelection div:last-child,
+#selections #compSelection div:last-child {
     color: rgb(199, 199, 199);
     font-size: 0.7em;
     text-align: center;
     padding: 0.2em 0;
     text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,1);
+}
+
+#selections #roundResults {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40em;
+    padding: 0 2em;
+    width: 100%;
 }
 
 #selections #userStatus {
@@ -192,16 +218,49 @@ h1 {
 
 #scoreBoard {
     align-items: center;
-    gap: 2em;
+    gap: 1em;
     text-align: center;
     width: 100%;
 }
 
 #scoreBoard > div {
-    align-items: center;
+    align-items: stretch;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(0,0,0,0.7);
     display: flex;
     flex-direction: column;
+    height: 8em;
     justify-content: flex-start;
+}
+
+#scoreBoard #userBlock,
+#scoreBoard #compBlock {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 7em;
+}
+
+#scoreBoard #userBlock {
+    margin-left: 1.8em;
+}
+
+#scoreBoard #compBlock {
+    margin-right: 1.8em;
+}
+
+#scoreBoard #gameBlock {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    max-width: 40em;
+    padding: 0 2em;
+    width: 100%;
 }
 
 #scoreBoard #userScore,
@@ -214,19 +273,17 @@ h1 {
 
 #scoreBoard #userBlock div:last-child,
 #scoreBoard #compBlock div:last-child {
+    color: rgb(199, 199, 199);
     font-size: 0.7em;
     text-align: center;
+    padding: 0 0 0.2em;
     text-shadow: 0.1em 0.1em 0.1em rgba(0,0,0,1);
 }
 
-#scoreBoard #gameIntro {
-    font-family: var(--title-font);
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
 #scoreBoard #gameInfo {
-    font-size: 0.8em;
+    font-family: var(--title-font);
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 #scoreBoard #gameOver {

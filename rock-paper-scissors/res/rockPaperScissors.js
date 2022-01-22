@@ -39,8 +39,7 @@ class RockPaperScissors {
         // Class Elements
         this.userDiv    = document.getElementById('userScore');
         this.compDiv    = document.getElementById('compScore');
-        this.gameIntro  = document.getElementById('gameIntro');
-        this.gameInfo   = document.getElementById('gameInfo');
+        this.gameInfo  = document.getElementById('gameInfo');
         this.options    = document.getElementById('options');
         this.selections = document.getElementById('selections');
         this.userStatus = document.getElementById('userStatus');
@@ -195,8 +194,7 @@ class RockPaperScissors {
         } else {
             message = 'D E F E A T';
         }
-        this.gameIntro.innerText = message;
-        this.gameInfo.innerText = 'G A M E - O V E R';
+        this.gameInfo.innerText = message;
         this.btnNextRound.style.display = 'none';
         this.btnGameOver.style.display = 'block';
     }
@@ -213,8 +211,7 @@ class RockPaperScissors {
         this.userDiv.innerText = 0;
         this.compDiv.innerText = 0;
 
-        this.gameIntro.innerText = 'First to 5 Wins';
-        this.gameInfo.innerText  = 'Choose One to Continue';
+        this.gameInfo.innerText = 'First to 5 Wins';
 
         this.userStatus.innerText = '';
         this.roundInfo.innerText  = '';
