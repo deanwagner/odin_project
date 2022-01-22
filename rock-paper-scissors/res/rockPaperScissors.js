@@ -128,7 +128,7 @@ class RockPaperScissors {
      * Handle Tie
      */
     tie() {
-        this.userStatus.innerText = 'Draw';
+        this.userStatus.innerText = 'DRAW';
         this.roundInfo.innerText = 'You both played ' + this.hand[this.userHand].name;
         this.finishRound();
     }
