@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Class for Rock Paper Scissors Game
+ * Rock Paper Scissors Game
  * @class
  * @author  Dean Wagner <info@deanwagner.net>
  */
