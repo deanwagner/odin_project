@@ -34,8 +34,24 @@ a:hover, a:focus, a:active {
     text-shadow: 0 0 0.2em #fff;
 }
 
+.github-link {
+    transition: all 0.3s ease-out;
+}
+
+.github-link:hover,
+.github-link:focus {
+    transform: scale(1.5);
+    transition: all 0.3s ease-out;
+}
+
 .github-icon {
     filter: drop-shadow(0.1em 0.1em 0.1em #000);
+    transition: all 0.3s ease-out;
+}
+
+.github-link:hover .github-icon,
+.github-link:focus .github-icon {
+    filter: drop-shadow(0 0 0.3em #fff);
 }
 
 .github-path {
