@@ -296,6 +296,7 @@ h1 {
 
 footer {
     bottom: 0;
+    color: #c5c5c5;
     display: block;
     font-size: 0.6em;
     margin: 2rem 0 1rem;
@@ -313,4 +314,15 @@ footer a:hover,
 footer a:focus,
 footer a:active {
     text-decoration: none;
+}
+
+footer .github-icon {
+    filter: drop-shadow(0.1em 0.1em 0.1em #000);
+    height: 1rem;
+    vertical-align: bottom;
+    width: 1rem;
+}
+
+footer .github-path {
+    fill: #f4f4f4;
 }
