@@ -1,0 +1,29 @@
+<svg id="lcd_digit" xmlns="http://www.w3.org/2000/svg" viewBox="-2 -4 52 90">
+    <defs>
+        <filter id="lcd_shadow" x="0" y="0" width="200%" height="200%">
+            <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.8" />
+        </filter>
+        <style>
+            .lcd_whole {
+                fill: gray;
+                transition: opacity 0.2s;
+            }
+            .lcd_hide {
+                opacity: 0.20;
+            }
+            .lcd_show {
+                opacity: 0.90;
+                filter: url(#lcd_shadow);
+            }
+        </style>
+    </defs>
+    <g class="lcd_whole">
+        <polygon id="topCenter" class="lcd_show" points="33 12 41 4 37 0 10 0 6 4 14 12 33 12"/>
+        <polygon id="topLeft"   class="lcd_hide" points="4 41 12 33 12 14 4 6 0 10 0 37 4 41"/>
+        <polygon id="topRight"  class="lcd_show" points="43 41 47 37 47 10 43 6 35 14 35 33 43 41"/>
+        <polygon id="midCenter" class="lcd_hide" points="33 47 39 41 33 35 14 35 8 41 14 47 33 47"/>
+        <polygon id="botLeft"   class="lcd_hide" points="4 76 12 68 12 49 4 41 0 45 0 72 4 76"/>
+        <polygon id="botRight"  class="lcd_show" points="43 76 47 72 47 45 43 41 35 49 35 68 43 76"/>
+        <polygon id="botCenter" class="lcd_hide" points="37 82 41 78 33 70 14 70 6 78 10 82 37 82"/>
+    </g>
+</svg>
