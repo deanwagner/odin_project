@@ -17,15 +17,15 @@ class RockPaperScissors {
         this.hand = [{
             name : 'Rock',
             win  : 'Rock beats Scissors',
-            img  : './img/rock.svg'
+            img  : './bin/rock.svg'
         }, {
             name : 'Paper',
             win  : 'Paper beats Rock',
-            img  : './img/paper.svg'
+            img  : './bin/paper.svg'
         }, {
             name : 'Scissors',
             win  : 'Scissors beats Paper',
-            img  : './img/scissors.svg'
+            img  : './bin/scissors.svg'
         }];
 
         // Class Properties
