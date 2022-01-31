@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Sign Up!</title>
+        <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png" sizes="32x32">
+        <link rel="stylesheet" href="./res/signup.css">
+        <script src="./res/signup.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', () => {
+                handleForm();
+            });
+        </script>
+    </head>
+    <body>
+        <aside>
+            <h1>
+                <img src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Project Logo">
+                Odin
+            </h1>
+            <cite>
+                Photo by <a href="https://unsplash.com/@conradz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Conrad Ziebland</a>
+                on <a href="https://unsplash.com/images/nature/seascape?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+            </cite>
+        </aside>
+        <main>
+            <header>
+                <p>This is not a real online service! You know you need something
+                    like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </header>
+            <form>
+                <fieldset>
+                    <h2>Let's do this!</h2>
+                    <label for="first-name">
+                        First Name
+                        <input type="text" id="first-name" pattern="[a-zA-Z]+" min="2" max="15" required>
+                    </label>
+                    <label for="last-name">
+                        Last Name
+                        <input type="text" id="last-name" pattern="[a-zA-Z]+" min="2" max="15" required>
+                    </label>
+                    <label for="email-address">
+                        Email
+                        <input type="email" id="email-address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="you@service.com" required>
+                    </label>
+                    <label for="phone-number">
+                        Phone Number
+                        <input type="tel" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    </label>
+                    <label for="password-one">
+                        Password
+                        <input type="password" id="password-one" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+                    </label>
+                    <label for="password-two">
+                        Confirm Password
+                        <input type="password" id="password-two" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" minlength="8" required>
+                    </label>
+                </fieldset>
+                <button type="submit">Create Account</button>
+                <div>Already have an account? <a href="#">Log in</a></div>
+            </form>
+            <footer>
+                Created by <a href="https://deanwagner.net/">Dean Wagner</a>
+                for <a href="https://theodinproject.com/">The Odin Project</a>
+            </footer>
+        </main>
+    </body>
+</html>
