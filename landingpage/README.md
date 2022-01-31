@@ -1,4 +1,4 @@
-# odin_project
-*Taking a little refresher at theodinproject.com*
+# Landing Page
+A basic Landing Page Mock-Up
 
-See [this repository's index.html](https://deanwagner.github.io/odin_project/) for more info.
+https://github.com/deanwagner/odin_project/tree/main/landingpage
