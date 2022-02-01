@@ -174,7 +174,7 @@ form input {
 
 form input:focus {
     background-color: #fff;
-    border: 1px solid blue;
+    border: 1px solid #6e8fa7;
     box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.5);
     outline: 0;
     transform: scale(1.1);
