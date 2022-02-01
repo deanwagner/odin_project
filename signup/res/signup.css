@@ -130,6 +130,40 @@ header p {
     width: 100%;
 }
 
+/* * * * * * * * *\
+ *  GitHub Icon  *
+\* * * * * * * * */
+
+.github-link {
+    display: block;
+    margin: 1.5em 2em 0 0;
+    position: absolute;
+    right: 0;
+    transition: all 0.3s ease-out;
+    top: 0;
+}
+
+.github-link:hover,
+.github-link:focus {
+    transform: rotate(360deg) scale(1.5);
+}
+
+.github-icon {
+    filter: drop-shadow(0.1em 0.1em 0.1em rgba(0,0,0,0.5));
+    height: 2em;
+    transition: all 0.3s ease-out;
+    width: 2em;
+}
+
+.github-link:hover .github-icon,
+.github-link:focus .github-icon {
+    filter: drop-shadow(0 0 0.2em #6e8fa7);
+}
+
+.github-path {
+    fill: #6e8fa7;
+}
+
 form {
     flex: 2;
 }
