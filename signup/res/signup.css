@@ -1,3 +1,15 @@
+
+/* * * * * * * * * * * *\
+ *    Sign Up Form     *
+ *                     *
+ *  By: Dean Wagner    *
+ *  me@deanwagner.net  *
+ *                     *
+ *   Assignment for:   *
+ *  The Odin Project   *
+ * theodinproject.com  *
+\* * * * * * * * * * * */
+
 @font-face {
     font-family: 'Odin';
     src: url('https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf') format('opentype');
@@ -7,6 +19,10 @@
     box-sizing: border-box;
     cursor: default;
 }
+
+/* * * * * * * * *\
+ * Element Base  *
+\* * * * * * * * */
 
 html {
     margin: 0;
@@ -40,6 +56,21 @@ a:hover, a:focus, a:active {
     text-decoration: none;
     text-shadow: 0 0 0.2em #6e8fa7;
 }
+
+abbr {
+    border-bottom: 1px dotted #6e8fa7;
+    cursor: help;
+    text-decoration: none;
+}
+
+code {
+    color: #6e8fa7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* * * * * * * * *\
+ *     Aside     *
+\* * * * * * * * */
 
 aside {
     background-color: #3c4e5b;
@@ -84,8 +115,8 @@ aside cite {
     display: block;
     font-size: 0.7em;
     font-style: normal;
-    padding-bottom: 0.5em;
-    text-align: center;
+    padding: 0 0 0.5em 1em;
+    text-align: left;
     text-shadow: 0.1em 0.1em 0.1em #000;
     width: 100%;
 }
@@ -105,6 +136,10 @@ aside cite a:active {
     text-shadow: 0 0 0.2em #fff;
 }
 
+/* * * * * * * * *\
+ *     Main      *
+\* * * * * * * * */
+
 main {
     align-items: stretch;
     display: flex;
@@ -113,6 +148,10 @@ main {
     justify-content: stretch;
     min-width: 60vw;
 }
+
+/* * * * * * * * *\
+ *    Header     *
+\* * * * * * * * */
 
 header {
     align-items: center;
@@ -124,6 +163,8 @@ header {
 }
 
 header p {
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
     margin: 0 auto 1em;
     max-width: 40ch;
     text-align: justify;
@@ -164,6 +205,10 @@ header p {
     fill: #6e8fa7;
 }
 
+/* * * * * * * * *\
+ *     Form      *
+\* * * * * * * * */
+
 form {
     flex: 2;
 }
@@ -188,9 +233,14 @@ form h2 {
 }
 
 form label {
+    cursor: help;
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+form label span {
+    color: red;
 }
 
 form input {
@@ -209,7 +259,7 @@ form input {
 form input:focus {
     background-color: #fff;
     border: 1px solid #6e8fa7;
-    box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.5);
+    box-shadow: 0.1em 0.1em 0.3em rgba(0,0,0,0.7);
     outline: 0;
     transform: scale(1.1);
 }
@@ -223,6 +273,13 @@ form input.validate:invalid,
 form.validate input:invalid {
     border: none;
     outline: 2px solid red;
+}
+
+form label div {
+    color: red;
+    display: block;
+    font-weight: normal;
+    text-transform: none;
 }
 
 form button {
@@ -254,8 +311,25 @@ form > div {
     margin-left: 5vw;
 }
 
+/* * * * * * * * *\
+ *    Footer     *
+\* * * * * * * * */
+
 footer {
     font-size: 0.7em;
-    padding-bottom: 0.5em;
-    text-align: center;
+    padding: 0 1em 0.5em 0;
+    text-align: right;
+}
+
+/* * * * * * * * *\
+ * Media Queries *
+\* * * * * * * * */
+
+@media screen and (orientation: portrait) {
+    body { flex-direction: column; }
+    aside { background-position: bottom center; min-height: 100vh; width: 100%; }
+    main { min-height: 100vh; }
+    .github-link:hover .github-icon, 
+    .github-link:focus .github-icon { filter: drop-shadow(0 0 0.2em #fff); }
+    .github-path { fill: #fff; }
 }
