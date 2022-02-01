@@ -1,4 +1,4 @@
 # Sign Up Form
 A basic Sign Up Form with Validation
 
-https://github.com/deanwagner/odin_project/tree/main/signup/
+https://deanwagner.github.io/odin_project/signup/
