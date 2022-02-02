@@ -66,6 +66,7 @@ abbr {
 code {
     color: #6e8fa7;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 /* * * * * * * * *\
