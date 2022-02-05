@@ -114,7 +114,7 @@ aside h1 img {
 aside cite {
     color: #ccc;
     display: block;
-    font-size: 0.7em;
+    font-size: 0.8em;
     font-style: normal;
     padding: 0 0 0.5em 1em;
     text-align: left;
@@ -309,7 +309,6 @@ form button:active {
 }
 
 form > div {
-    font-size: 0.8em;
     margin-left: 5vw;
 }
 
@@ -318,7 +317,7 @@ form > div {
 \* * * * * * * * */
 
 footer {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding: 0 1em 0.5em 0;
     text-align: right;
 }
