@@ -1,4 +1,4 @@
 # Landing Page
 A basic Landing Page Mock-Up
 
-https://github.com/deanwagner/odin_project/tree/main/landingpage
+https://deanwagner.github.io/odin_project/landingpage
