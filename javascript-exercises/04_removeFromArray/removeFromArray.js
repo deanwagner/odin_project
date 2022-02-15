@@ -1,9 +1,9 @@
 /**
  * Removes specified Elements from Array
  * @author  Dean Wagner <info@deanwagner.net>
- * @param   {number} data[]   - Array of Numbers
- * @param   {number} remove[] - Numbers to be Removed
- * @returns {number} - Array with Removed Elements
+ * @param   {array} data   - Array of Numbers
+ * @param   {array} remove - Numbers to be Removed
+ * @returns {array} - Array with Removed Elements
  */
 const removeFromArray = function(data, ...remove) {
     // Loop through Parameters

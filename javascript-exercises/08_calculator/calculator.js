@@ -1,6 +1,5 @@
 /**
  * Adds 2 Numbers
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} num1 - Augend 
  * @param   {number} num2 - Addend
  * @returns {number} - Sum
@@ -11,7 +10,6 @@ const add = function(num1, num2) {
 
 /**
  * Subtracts 2 Numbers
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} num1 - Minuend
  * @param   {number} num2 - Subtrahend
  * @returns {number} - Difference
@@ -22,8 +20,7 @@ const subtract = function(num1, num2) {
 
 /**
  * Adds each Element of an Array
- * @author  Dean Wagner <info@deanwagner.net>
- * @param   {number} data[] - Numbers to Add
+ * @param   {array} data - Numbers to Add
  * @returns {number} - Sum
  */
 const sum = function(data) {
@@ -36,8 +33,7 @@ const sum = function(data) {
 
 /**
  * Multiplies each Element of an Array
- * @author  Dean Wagner <info@deanwagner.net>
- * @param   {number} data[] - Numbers to Multiply
+ * @param   {array} data - Numbers to Multiply
  * @returns {number} - Product
  */
 const multiply = function(data) {
@@ -54,7 +50,6 @@ const multiply = function(data) {
 
 /**
  * Exponentiation (to the power of)
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} num1 - Base 
  * @param   {number} num2 - Exponent
  * @returns {number} - Result
@@ -73,7 +68,6 @@ const power = function(num1, num2) {
 
 /**
  * Calculate Factorial
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} num - Get Factorial of
  * @returns {number} - Factorial
  */

@@ -1,5 +1,5 @@
 /**
- * Determines whether or not a given string is a palindrome
+ * Determines whether a given string is a palindrome
  * @author  Dean Wagner <info@deanwagner.net>
  * @param   {string} str - String to Test
  * @returns {boolean} - Palindrome = true; else = false

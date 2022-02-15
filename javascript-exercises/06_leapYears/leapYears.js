@@ -1,5 +1,5 @@
 /**
- * Determines whether or not a given year is a leap year
+ * Determines whether a given year is a leap year
  * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} year - The Year to Test
  * @returns {boolean} - Leap Year = true; else = false

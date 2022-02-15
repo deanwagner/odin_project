@@ -17,7 +17,7 @@ const sumAll = function(num1, num2) {
             // Second is Greater
             result = calc(num1, num2);
         } else {
-            // First is Geater
+            // First is Greater
             result = calc(num2, num1);
         }
     }
@@ -26,7 +26,6 @@ const sumAll = function(num1, num2) {
 
 /**
  * Helper Function for sumAll(); Checks for Valid Number
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} num - Number to Test
  * @returns {boolean} - Valid = true; Invalid = false
  */
@@ -46,7 +45,6 @@ const checkNum = function(num) {
 
 /**
  * Helper Function for sumAll(); Calculates Sum
- * @author  Dean Wagner <info@deanwagner.net>
  * @param   {number} first - First Number
  * @param   {number} last  - Last Number
  * @returns {number} - The Sum
