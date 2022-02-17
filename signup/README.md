@@ -1,5 +1,5 @@
 # Sign Up Form
-###A basic Sign-Up Form with Validation
+### A basic Sign-Up Form with Validation
 
 https://deanwagner.github.io/odin_project/signup/
 
