@@ -12,9 +12,9 @@ This form uses simple HTML validation via the `pattern` attribute of the `input`
 ### Provided Assets
 
 * Project Design File: [sign-up-form.png](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/sign-up-form.png)
-* Image Library: [Unsplash.com](https://unsplash.com/)
-* Font: [Norse Bold](https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf)
 * Odin Logo: [odin-lined.png](https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png)
+* Font: [Norse Bold](https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf)
+* Image Library: [Unsplash.com](https://unsplash.com/)
 
 ### Objectives
 
