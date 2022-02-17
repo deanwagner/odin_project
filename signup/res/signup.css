@@ -3,7 +3,7 @@
  *    Sign Up Form     *
  *                     *
  *  By: Dean Wagner    *
- *  me@deanwagner.net  *
+ * info@deanwagner.net *
  *                     *
  *   Assignment for:   *
  *  The Odin Project   *
@@ -75,7 +75,7 @@ code {
 
 aside {
     background-color: #3c4e5b;
-    background-image: url('./bg.jpg');
+    background-image: url('../img/bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
