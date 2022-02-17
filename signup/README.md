@@ -24,5 +24,6 @@ This form uses simple HTML validation via the `pattern` attribute of the `input`
 
 ### Scope Creep
 
-* Used browser-based validation with `:valid` and `:invalid` pseudo-elements instead of a class to show user feedback
+* Implemented browser-based input validation
+* Used `:valid` and `:invalid` pseudo-elements instead of a class to show user feedback
 * Used `:focus` pseudo-element instead of class
