@@ -27,6 +27,7 @@
 * {
     box-sizing: border-box;
     cursor: default;
+    scroll-behavior: smooth;
 }
 
 /* * * * * * * * *\
