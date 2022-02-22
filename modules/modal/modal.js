@@ -16,11 +16,13 @@ class Modal {
      */
     constructor(maskID = 'modal') {
 
+        /* Used CSS @import instead
         // Load CSS
         const css = document.createElement('link');
         css.setAttribute('rel', 'stylesheet');
         css.setAttribute('href', 'https://deanwagner.github.io/odin_project/modules/modal/modal.css');
         document.head.appendChild(css);
+        */
 
         // Mask Element
         this.mask = document.getElementById(maskID);
