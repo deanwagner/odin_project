@@ -20,7 +20,7 @@ This form uses simple HTML validation via the `pattern` attribute of the `input`
 
 1. Build a page based on the Provided Assets
 2. ~~“Last Name”~~ input ~~should be given a class of~~ focus ~~and~~ styled with a blue border and a subtle box-shadow
-3. ~~Password~~ inputs should be ~~given an~~ error ~~class and~~ styled with a red border
+3. ~~Password~~ inputs ~~should be given an~~ error ~~class and~~ styled with a red border
 
 ### Scope Creep
 
