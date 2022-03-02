@@ -1,4 +1,8 @@
-# odin_project
-*Taking a little refresher at theodinproject.com*
+# The Odin Project
+### [theodinproject.com](https://www.theodinproject.com/)
 
-See [this repository's index.html](https://deanwagner.github.io/odin_project/) for more info.
+This repository was created while studying **The Odin Project** curriculum. There's not much here but some basic exercises. See the links below for actual projects.
+
+* [Portfolio Project](https://deanwagner.github.io/portfolio/)
+* [Dashboard Project](https://deanwagner.github.io/dashboard/)
+* [Raw HTML Index](https://deanwagner.github.io/odin_project/)
