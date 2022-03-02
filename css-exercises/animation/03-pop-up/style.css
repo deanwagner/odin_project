@@ -12,6 +12,8 @@ body {
   height: 100vh;
   background-color: #ffffff;
   opacity: 100%;
+
+  transition: background-color 0.5s ease-in, opacity 0.5s ease-in;
 }
 
 #trigger-modal,
@@ -53,15 +55,7 @@ body {
   font-weight: 600;
 }
 
-/* SOLUTION */
-
-/* 
-  Disclaimer: duplicating selectors here isn't best practice.
-  We separated it out here to make it extra clear what has changed. 
-*/
-
 .button-container {
-  transition: background-color 0.5s ease-in, opacity 0.5s ease-in;
 }
 
 .button-container.show {
