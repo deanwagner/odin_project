@@ -30,8 +30,27 @@ ul {
   width: 160px;
   list-style: none;
   text-align: center;
+
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
 }
 
 li {
   padding: 16px;
+}
+
+.dropdown-menu:hover ul {
+  max-height: 500px;
+  transition: max-height 0.5s ease-out;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(59, 232, 255);
+}
+
+ul li:hover {
+  cursor: pointer;
+  background-color: #ddd;
 }
